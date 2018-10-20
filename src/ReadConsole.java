@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class readConsole {
+public class ReadConsole {
 
     public static ArrayList<Conterster> readContestansData() {
         ArrayList<Conterster> list = new ArrayList<>();
@@ -16,9 +16,11 @@ public class readConsole {
                 try {
                     list.add(new Conterster(data[0], data[1], Integer.parseInt(data[2])));
                 } catch (NumberFormatException e){
-
+                    System.out.println("Brak zgoności z formatem, nie dodano zawodnika");
                 }
-            }
+            } else
+                System.out.println("Brak zgoności z formatem, nie dodano zawodnika");
+
         } while (inputTemp != null && inputTemp.compareTo("stop") != 0);
         return list;
     }

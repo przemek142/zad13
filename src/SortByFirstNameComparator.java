@@ -8,9 +8,9 @@ public class SortByFirstNameComparator implements Comparator<Conterster> {
                 if (o1.getScore() == o2.getScore())
                     return 0;
                 else if (o1.getScore() > o2.getScore())
-                    return 1;
-                else
                     return -1;
+                else
+                    return 1;
             } else
                 return o1.getLastName().compareTo(o2.getLastName());
         } else

@@ -3,14 +3,13 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        ArrayList<Conterster> contersters;
-        contersters = readConsole.readContestansData();
+        ArrayList<Conterster> converters;
+        converters = ReadConsole.readContestansData();
 
-        SortByUserPreferences.Sort(readConsole.getUserSortingPreferences(), contersters);
+        SortByUserPreferences.Sort(ReadConsole.getUserSortingPreferences(), converters);
 
-        for (Conterster conterster : contersters) {
-            System.out.println("a" + conterster);
-        }
+        WriteFile.writeToFile(converters);
+
     }
 
 }

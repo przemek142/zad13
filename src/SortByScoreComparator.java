@@ -11,8 +11,8 @@ public class SortByScoreComparator implements Comparator<Conterster> {
             else return  o1.getFirstName().compareTo(o2.getFirstName());
 
         }else if (o1.getScore() > o2.getScore())
-            return 1;
-        else return -1;
+            return -1;
+        else return 1;
 
     }
 }
