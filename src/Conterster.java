@@ -49,7 +49,6 @@ public class Conterster implements Comparable<Conterster> {
         return Objects.hash(firstName, lastName, score);
     }
 
-
     @Override
     public int compareTo(Conterster o) {
         if (lastName.compareTo(o.lastName) == 0) {

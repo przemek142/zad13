@@ -15,7 +15,7 @@ public class ReadConsole {
                 String[] data = inputTemp.split(" ");
                 try {
                     list.add(new Conterster(data[0], data[1], Integer.parseInt(data[2])));
-                } catch (NumberFormatException e){
+                } catch (NumberFormatException e) {
                     System.out.println("Brak zgoności z formatem, nie dodano zawodnika");
                 }
             } else

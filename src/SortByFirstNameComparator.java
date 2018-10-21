@@ -1,6 +1,7 @@
 import java.util.Comparator;
 
 public class SortByFirstNameComparator implements Comparator<Conterster> {
+
     @Override
     public int compare(Conterster o1, Conterster o2) {
         if (o1.getFirstName().compareTo(o2.getFirstName()) == 0) {
