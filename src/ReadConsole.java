@@ -11,7 +11,7 @@ public class ReadConsole {
         do {
             System.out.println("Wprowadź dane w formacie (lub stop): Imię Nazwisko Wynik");
             inputTemp = scanner.nextLine();
-            if (inputTemp.compareTo("stop") != 0 && inputTemp != null && inputTemp.split(" ").length == 3) {
+            if (inputTemp.compareTo("stop") != 0  && inputTemp.split(" ").length == 3) {
                 String[] data = inputTemp.split(" ");
                 try {
                     list.add(new Conterster(data[0], data[1], Integer.parseInt(data[2])));
@@ -21,7 +21,7 @@ public class ReadConsole {
             } else
                 System.out.println("Brak zgoności z formatem, nie dodano zawodnika");
 
-        } while (inputTemp != null && inputTemp.compareTo("stop") != 0);
+        } while (inputTemp.compareTo("stop") != 0);
         return list;
     }
 
